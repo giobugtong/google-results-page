@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <div id="top-bar">
+        <a href="#"><img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" id="logo"></a>
+        <a href="#">
+            <div id="apps-container">
+            <div class="apps-blocks"></div>
+            <div class="apps-blocks"></div>
+            <div class="apps-blocks"></div>
+            <div class="apps-blocks"></div>
+            <div class="apps-blocks"></div>
+            <div class="apps-blocks"></div>
+            <div class="apps-blocks"></div>
+            <div class="apps-blocks"></div>
+            <div class="apps-blocks"></div>
+            </div>
+        </a>
+    </div>
+</html>
+
+<style>
+.center{
+    display: block;
+    margin: auto;
+}
+#top-bar{
+    margin-top: 0px;
+    height: 31px;
+}
+#logo{
+    width: 92px;
+    height: auto;
+    margin: 20px 40px 0 20px;
+}
+#apps-container:hover .apps-blocks{
+    background-color: rgb(53, 53, 53);
+}
+#apps-container{
+    display: grid;
+    grid-template-columns: 6px 6px 6px;
+    grid-template-rows: 6px 6px 6px;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    top: 17px;
+    right: 76px;
+    padding: 6px;
+}
+.apps-blocks{
+    display: block;
+    background-color: rgb(116, 116, 116);
+    height: 4px;
+    width: 4px;
+}
+</style>
