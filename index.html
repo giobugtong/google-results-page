@@ -19,9 +19,13 @@
             <div class="apps-blocks"></div>
             <div class="apps-blocks"></div>
             </div>
+            <div id="input-border"><input type="text"></div>
         </a>
         <a href="https://github.com/giodude23" target="_blank"><img id="profile-img" src="https://lh3.googleusercontent.com/ogw/ADGmqu_oOEJwYULx3oXLT_0R5WAA6-P-JYM3DSGIjo4Muw=s32-c-mo"></a>
     </div>
+    <body>
+
+    </body>
 </html>
 
 <style>
@@ -31,28 +35,63 @@
 }
 #top-bar{
     margin-top: 0px;
-    height: 31px;
+    height: 65px;
 }
 #logo{
     width: 92px;
     height: auto;
     margin: 20px 40px 0 20px;
 }
-#apps-container:hover .apps-blocks{
-    background-color: rgb(53, 53, 53);
+input{
+    display: inline-block;
+    margin: -5px auto 0px 30px;
+    width: 85%;
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    outline: none;
+    
+}
+#input-border{
+    display: block;
+    margin: auto;
+    width: auto;
+    max-width: 465px;
+    height: 25px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.140)  
+}
+#input-border:hover{
+    box-shadow: 0px 1px 3px 2px #8080804f;
+    border-color: rgba(0, 0, 0, 0);
+    outline: none;
+}
+#input:hover #input-border{
+    box-shadow: 0px 1px 3px 2px #8080804f;
+    border-color: rgba(0, 0, 0, 0);
+    outline: none;
+}
+#apps-container:hover{
+    background-color:rgb(231, 231, 231);
 }
 #apps-container{
     display: grid;
     grid-template-columns: 6px 6px 6px;
     grid-template-rows: 6px 6px 6px;
-    height: 16px;
-    width: 16px;
+    height: 25px;
+    width: 25px;
     position: absolute;
     top: 17px;
     right: 76px;
     padding: 6px;
+    border-radius: 50%;
 }
 .apps-blocks{
+    margin-left: 5px;
+    margin-top: 5px;
     display: block;
     background-color: rgb(116, 116, 116);
     height: 4px;
