@@ -23,6 +23,32 @@
         </a>
         <a href="https://github.com/giodude23" target="_blank"><img id="profile-img" src="https://lh3.googleusercontent.com/ogw/ADGmqu_oOEJwYULx3oXLT_0R5WAA6-P-JYM3DSGIjo4Muw=s32-c-mo"></a>
     </div>
+    <div id="nav-bar">
+        <div class="nav-content">
+            All
+        </div>
+        <div class="nav-content">
+            News
+        </div>
+        <div class="nav-content">
+            Videos
+        </div>
+        <div class="nav-content">
+            Maps
+        </div>
+        <div class="nav-content">
+            Images
+        </div>
+        <div class="nav-content">
+            More
+        </div>
+        <div class="nav-content" id="nav-settings">
+            Settings
+        </div>
+        <div class="nav-content">
+            Tools
+        </div>
+    </div>
     <body>
 
     </body>
@@ -33,8 +59,14 @@
     display: block;
     margin: auto;
 }
+
+/* TOP BAR */
+
 #top-bar{
-    margin-top: 0px;
+    display: block;
+    position: absolute;
+    width: 100%;
+    margin: auto;
     height: 65px;
 }
 #logo{
@@ -53,10 +85,10 @@ input{
     
 }
 #input-border{
-    display: block;
-    margin: auto;
+    display: flex;
+    margin: -40px auto 0 auto;
+    max-width: 692px;
     width: auto;
-    max-width: 465px;
     height: 25px;
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
@@ -106,4 +138,24 @@ input{
     top: 15px;
     right: 29px;
 }
+
+/* NAV BAR */
+#nav-bar{
+    display: block;
+    position: absolute;
+    margin: 80px auto 0 80px;
+    background-color: red;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#nav-settings{
+    margin-left: 100px;
+}
+.nav-content{
+    display: inline-block;
+    padding: 10px;
+    margin-left: 20px;
+
+}
+
 </style>
