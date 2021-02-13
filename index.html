@@ -91,8 +91,31 @@
                     </div>
                 </div>
             </div>
-            <div id="result-1">
-                
+            <div class="left-indent" id="result-1">
+                <div class="sites" id="site-1">
+                    victor-if.github.io › google-search-results
+                </div>
+                <div>
+                    <h3>
+                        <span class="main-links">build this wepage - GitHub Pages</span>    
+                    </h3>
+                    <p>
+                        <strong>build this webpage</strong>. https://benjdelt.github.io/google-results/. With zero coding experience, artist building 180 webpages in 180 days ...
+                    </p>
+                 </div>
+            </div>
+            <div class="left-indent" id="result-2">
+                <div class="sites" id="site-2">
+                    christine-27.github.io › google-homepage
+                </div>
+                <div>
+                    <h3>
+                        <span class="main-links">build this wepage - GitHub Pages</span>    
+                    </h3>
+                    <p>
+                        With zero coding experience, artist <strong>building</strong> 180 <strong>webpages</strong> . ... days ago, having never done any progrmaming in her life, Jeniffer Dewait built her first <strong>webpage</strong>.
+                    </p>
+                 </div>
             </div>
         </div>
     </body>
@@ -124,7 +147,7 @@ input{
     width: 85%;
     height: 30px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     outline: none;
     border: none;
 }
@@ -250,13 +273,37 @@ input:hover #input-border{
     display: block;
     margin-left: 182px;
 }
+div{
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+#results-main{
+    min-width: 800px;
+}
+.main-links:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+h3{
+    color: #1a0dab;
+    font-weight: normal;
+    margin: 5px auto 5px auto;
+    font-size: 21px;
+}
+p{
+    font-size: 14px;
+    color: #5f6368;
+    margin: 5px auto 5px auto;
+}
+.sites{
+    color: #5f6368;
+    font-size: 14px;
+}
 /* RESULT COUNT */
 
-#results-main{}
+
 #result-count-bar{}
 #result-count{
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     display: inline-block;
     position: relative;
@@ -264,7 +311,14 @@ input:hover #input-border{
     color: #70757A;
 }
 
-/* MAIN RESULTS */
+/* MAIN › RESULTS */
+
+#result-1{
+    margin-bottom: 30px;
+}
+#result-2{
+    margin-bottom: 30px;
+}
 
 /* VIDEO SUGGESTIONS */
 
