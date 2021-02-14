@@ -6,8 +6,8 @@
         <meta name="HandheldFriendly" content="true">
     </head>
     <div id="top-bar">
-        <a href="#"><img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" id="logo"></a>
-        <a href="#">
+        <a href="https://www.google.com/search?q=build+this+webpage&oq=build+this&aqs=chrome.0.69i59l3j69i57j0j0i67j46j0i433.1372j0j7&sourceid=chrome&ie=UTF-8" target="_blank"><img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" id="logo"></a>
+        <a id="check" href="#">
             <div id="apps-container">
             <div class="apps-blocks"></div>
             <div class="apps-blocks"></div>
@@ -19,7 +19,12 @@
             <div class="apps-blocks"></div>
             <div class="apps-blocks"></div>
             </div>
-            <div id="input-border"><input type="text"></div>
+            <div id="input-border">
+                <input type="text">
+                <span id="search-clear">
+                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+                </span>
+            </div>
         </a>
         <a href="https://github.com/giodude23" target="_blank"><img id="profile-img" src="https://lh3.googleusercontent.com/ogw/ADGmqu_oOEJwYULx3oXLT_0R5WAA6-P-JYM3DSGIjo4Muw=s32-c-mo"></a>
     </div>
@@ -169,11 +174,26 @@ input{
     box-shadow: 0px 1px 3px 2px #8080804f;
     border-color: rgba(0, 0, 0, 0);
     outline: none;
+    cursor:default;
 }
 input:hover #input-border{
     box-shadow: 0px 1px 3px 2px #8080804f;
     border-color: rgba(0, 0, 0, 0);
     outline: none;
+    cursor:default;
+}
+#search-clear{
+    display: relative;
+    margin-right: 80px;
+    margin-top: 3px;
+    width: 26px;
+    height: 26px;
+}
+#clear-input:hover{
+    cursor: pointer;
+}
+#clear-input{
+color: #033be2;
 }
 #apps-container:hover{
     background-color:rgb(231, 231, 231);
