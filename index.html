@@ -24,6 +24,14 @@
                 <span id="search-clear">
                     <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
                 </span>
+                <div class="vert-line"></div>
+                <svg id="mic-icon" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m12 15c1.66 0 3-1.31 3-2.97v-7.02c0-1.66-1.34-3.01-3-3.01s-3 1.34-3 3.01v7.02c0 1.66 1.34 2.97 3 2.97z" fill="#4285f4"></path>
+                    <path d="m11 18.08h2v3.92h-2z" fill="#34a853"></path>
+                    <path d="m7.05 16.87c-1.27-1.33-2.05-2.83-2.05-4.87h2c0 1.45 0.56 2.42 1.47 3.38v0.32l-1.15 1.18z" fill="#f4b400"></path><path d="m12 16.93a4.97 5.25 0 0 1 -3.54 -1.55l-1.41 1.49c1.26 1.34 3.02 2.13 4.95 2.13 3.87 0 6.99-2.92 6.99-7h-1.99c0 2.92-2.24 4.93-5 4.93z" fill="#ea4335"></path>
+                </svg>
+                <svg id="magni-icon" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" ></path>
+                </svg>
             </div>
         </a>
         <a href="https://github.com/giodude23" target="_blank"><img id="profile-img" src="https://lh3.googleusercontent.com/ogw/ADGmqu_oOEJwYULx3oXLT_0R5WAA6-P-JYM3DSGIjo4Muw=s32-c-mo"></a>
@@ -38,14 +46,14 @@
                     <path fill="#fbbc04" d="M4 10H2a8 8 0 0 0 8 8v-2c-3.3 0-6-2.69-6-6"></path>
                     <path fill="#4285f4" d="M22 20.59l-5.69-5.69A7.96 7.96 0 0 0 18 10h-2a6 6 0 0 1-6 6v2c1.85 0 3.52-.64 4.88-1.68l5.69 5.69L22 20.59"></path>
                 </svg>
-            </span>All
+            </span> All
         </div>
         <div id="nav-news" class="nav-content">
             <span class="nav-svg">
             <svg focusable="false" viewBox="0 0 24 24">
                 <path d="M12 11h6v2h-6v-2zm-6 6h12v-2H6v2zm0-4h4V7H6v6zm16-7.22v12.44c0 1.54-1.34 2.78-3 2.78H5c-1.64 0-3-1.25-3-2.78V5.78C2 4.26 3.36 3 5 3h14c1.64 0 3 1.25 3 2.78zM19.99 12V5.78c0-.42-.46-.78-1-.78H5c-.54 0-1 .36-1 .78v12.44c0 .42.46.78 1 .78h14c.54 0 1-.36 1-.78V12zM12 9h6V7h-6v2"></path>
             </svg>
-        </span>News
+        </span> News
         </div>
         <div id="nav-videos" class="nav-content">
             <span class="nav-svg">
@@ -298,10 +306,14 @@ input:hover #input-border{
 }
 #search-clear{
     display: relative;
-    margin-right: 80px;
-    margin-top: 3px;
+    margin-right: 30px;
+    margin-top: 1px;
     width: 26px;
     height: 26px;
+    fill:rgb(143, 143, 143);
+}
+#search-clear:hover{
+    cursor: pointer;
 }
 #clear-input:hover{
     cursor: pointer;
@@ -341,7 +353,23 @@ color: #033be2;
     top: 15px;
     right: 29px;
 }
-
+#mic-icon:hover{
+    cursor: pointer;
+}
+#magni-icon{
+    margin-left: 15px;
+    fill: #1d7fff;
+}
+#magni-icon:hover{
+    cursor: pointer;
+}
+.vert-line{
+    display: block;
+    height: 27px;
+    border-left: 1px solid rgb(218, 218, 218);
+    margin-right: 10px;
+    margin-left: -12px;
+}
 /* NAV BAR */
 #nav-bar-container{
     min-width: 1262px;
@@ -386,11 +414,11 @@ color: #033be2;
     border-bottom:3px solid rgba(197, 197, 197, 0.781);
 }
 .nav-content{
-    display: inline-block;
     padding: 10px 11px 10px 11px;
     white-space: nowrap;
     float: left;
     height: 16px;
+    fill: rgb(114, 114, 114);
 }
 .nav-content:hover {
     cursor: pointer;
@@ -399,8 +427,7 @@ color: #033be2;
     width: 16px;
     height: 16px;
     display: inline-block;
-    margin-right: 4px;
-    
+    margin-left: 4px;
 }
 
 .left-indent{
