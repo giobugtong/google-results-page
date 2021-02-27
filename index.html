@@ -132,10 +132,34 @@
             </div>
             <div class="left-indent" id="container-ask">
                 <div id="ask-title">People also ask
-                    <div id="ask-1" class="ask-list">How much does it cost to hire someone to build you a website?</div>
-                    <div id="ask-2" class="ask-list">How can I create my own webpage?</div>
-                    <div id="ask-3" class="ask-list">What does it mean to build a website?</div>
-                    <div id="ask-4" class="ask-list">How much does it cost to build a one page website?</div>
+                    <div id="ask-1" class="ask-list">How much does it cost to hire someone to build you a website?
+                        <div class="drop-down-container">    
+                        <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="drop-down">
+                                <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div id="ask-2" class="ask-list">How can I create my own webpage?
+                        <div class="drop-down-container">    
+                            <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="drop-down">
+                                    <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                                </svg>
+                            </div>
+                    </div>
+                    <div id="ask-3" class="ask-list">What does it mean to build a website?
+                        <div class="drop-down-container">    
+                            <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="drop-down">
+                                    <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                                </svg>
+                            </div>
+                    </div>
+                    <div id="ask-4" class="ask-list">How much does it cost to build a one page website?
+                        <div class="drop-down-container">    
+                            <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="drop-down">
+                                    <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                                </svg>
+                            </div>
+                    </div>
                     <div id="ask-bottom">Feedback</div>
                     <div id="ask-border"></div>
                 </div>
@@ -243,6 +267,48 @@
                         <strong>build this webpage</strong>. https://benjdelt.github.io/google-results/. With zero coding experience, artist building 180 webpages in 180 days ...
                     </p>
                  </div>
+            </div>
+            <div class="left-indent" id="container-related">
+                <div id="related-title">Related searches
+                    <div class="related-item" id="related-item1">
+                        <div>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI1LjOiXkvUvFbahz59lCfhDPMGj9pASN1hWI1&s=0" class="related-img">
+                        </div>
+                        <div class="related-text">Website to use
+                            <div class="drop-down-container2">    
+                                <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="drop-down">
+                                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                                    </svg>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="related-item">
+                        <div>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4bLedTbp-MH4LhLdZJqsMILI1MSil3p0gfh5tUOd5khU5cxdUlyCN&s=0" class="related-img">
+                        </div>
+                        <div class="related-text">Website developer software
+                            <div class="drop-down-container2">    
+                                <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="drop-down">
+                                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                                    </svg>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="related-item">
+                        <div>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRan7Sy1FK5Rka2sw0XafYz1EwmAGWNcbOOyrtx&s=0" class="related-img">
+                        </div>
+                        <div class="related-text">Website design tools free
+                            <div class="drop-down-container2">    
+                                <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="drop-down">
+                                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                                    </svg>
+                                </div>
+                        </div>
+                    </div>
+                    <div id="related-bottom">Feedback</div>
+                    <div id="related-border"></div>
+                </div>
             </div>
         </div>
     </body>
@@ -463,6 +529,23 @@ p{
     color: #5f6368;
     font-size: 14px;
 }
+.drop-down-container{
+    position:absolute;
+    right: 20px;
+}
+.drop-down{
+    height: 24px;
+    width: 24px;
+    display: block;
+    float: right;
+    fill:rgb(114, 114, 114);
+}
+.drop-down-container2{
+    position:absolute;
+    right: 20px;
+    margin-top: -32px;
+}
+
 /* RESULT COUNT */
 
 
@@ -544,9 +627,44 @@ p{
 
 /* MAIN RESULTS */
 
-/* PEOPLE ALSO SEARCH FOR */
+/* RELATED SEARCHES */
 
-/* SEARCHES RELATED TO BUILD THIS WEBPAGE */
+#container-related{
+    display: block;
+    height: 240px;
+    width: 645px;
+    margin-bottom: 30px;
+}
+#related-title{
+    padding-top: 10px;
+    padding-bottom: 8px;
+    font-size: 20px;
+}
+#related-item1{
+    border-top: 1px solid rgb(231, 231, 231);
+    margin-top: 15px;
+}
+.related-item{
+    display: flex;
+    border-bottom: 1px solid rgb(231, 231, 231);
+    padding-top: 7px;
+    padding-bottom: 2px;
+}
+.related-item:hover{
+    cursor: pointer;
+}
+.related-text{
+    font-size: 16px !important;
+    color: black;
+    margin-left: 16px;
+    line-height: 40px;
+}
+.related-img{
+    height: 40px;
+    width: 40px;
+}
+
+
 
 /* GOOOOOOOOOOGLE */
 
