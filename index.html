@@ -156,9 +156,9 @@
                     <div id="ask-4" class="ask-list">How much does it cost to build a one page website?
                         <div class="drop-down-container">    
                             <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="drop-down">
-                                    <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
-                                </svg>
-                            </div>
+                                <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                            </svg>
+                        </div>
                     </div>
                     <div id="ask-bottom">Feedback</div>
                     <div id="ask-border"></div>
@@ -349,26 +349,27 @@
                 </div>
             </div>
         </div>
-        <div id="bottom-bar-container">
-            <div id="bottom-bar1">
-                <span class="bottom-bar1">
-                    <div id="PH">Philippines</div>
-                    <span id="location"><b>Navarro, General Trias, Cavite</b> - Based on your past activity
-                    </span>
-                    <a class="bottom-bar-fonts" href="#">Use precise location</a>" - "
-                    <a class="bottom-bar-fonts" href="#">Learn more</a>
-                </span>
-            </div>
-            <div id="bottom-bar2">
-                <span class="bottom-bar2">
-                    <a class="bottom-bar2-content bottom-bar-fonts" href="#">Help</a>
-                    <a class="bottom-bar2-content" href="#">Send feedback</a>
-                    <a class="bottom-bar2-content" href="#">Privacy</a>
-                    <a class="bottom-bar2-content" href="#">Terms</a>
-                </span>
-            </div>
-        </div>
+        
     </body>
+    <div id="bottom-bar-container">
+        <div id="bottom-bar1">
+            <span class="bottom-bar1">
+                <div id="PH">Philippines</div>
+                <span id="location"><b>Navarro, General Trias, Cavite</b> - Based on your past activity
+                </span>
+                <a class="bottom-bar-fonts" href="#">Use precise location</a>" - "
+                <a class="bottom-bar-fonts" href="#">Learn more</a>
+            </span>
+        </div>
+        <div id="bottom-bar2">
+            <span class="bottom-bar2">
+                <a class="bottom-bar2-content bottom-bar-fonts" href="#">Help</a>
+                <a class="bottom-bar2-content" href="#">Send feedback</a>
+                <a class="bottom-bar2-content" href="#">Privacy</a>
+                <a class="bottom-bar2-content" href="#">Terms</a>
+            </span>
+        </div>
+    </div>
 </html>
 
 <style>
@@ -381,11 +382,11 @@
 
 #top-bar{
     display: block;
-    position: absolute;
+    position: relative;
     min-width: 1261px;
-    margin: auto;
+    margin: auto auto -50px auto;
     height: 65px;
-}
+    }
 #logo{
     width: 92px;
     height: auto;
@@ -587,8 +588,10 @@ p{
     font-size: 14px;
 }
 .drop-down-container{
-    position:absolute;
-    right: 20px;
+    position: relative;
+    right: 0px;
+    bottom: 20px;
+    
 }
 .drop-down{
     height: 24px;
@@ -598,9 +601,10 @@ p{
     fill:rgb(114, 114, 114);
 }
 .drop-down-container2{
-    position:absolute;
-    right: 20px;
-    margin-top: -32px;
+    position: relative;
+    right: 40px;
+    bottom: 15px;
+    display: block;   
 }
 
 /* RESULT COUNT */
@@ -655,7 +659,7 @@ p{
     border: none;
 }
 .ask-list{
-    display: flex;
+    display: block;
     padding-top: 13px;
     padding-bottom: 13px;
     border-bottom: 1px solid rgb(231, 231, 231);
@@ -668,6 +672,8 @@ p{
     color:rgb(116, 116, 116);
     text-align: center;
     width: 60px;
+    position: relative;
+    left: 12px;
 }
 #ask-bottom:hover{
     cursor: pointer;
@@ -705,10 +711,11 @@ p{
     border: none;
 }
 .related-item{
-    display: flex;
+    display: block;
     border-bottom: 1px solid rgb(231, 231, 231);
-    padding-top: 7px;
-    padding-bottom: 2px;
+    position: relative;
+    padding-top: 5px;  
+    padding-bottom: 5px; 
 }
 .related-item:hover{
     cursor: pointer;
@@ -717,11 +724,16 @@ p{
     font-size: 16px !important;
     color: black;
     margin-left: 16px;
-    line-height: 40px;
+    line-height: 0px;
+    position: inherit;
+    bottom: 20px;
+    left: 45px;
 }
 .related-img{
     height: 40px;
     width: 40px;
+    position: relative;
+    top: 5px;
 }
 #related-bottom{
     display: block;
@@ -730,6 +742,9 @@ p{
     color:rgb(116, 116, 116);
     text-align: center;
     width: 60px;
+    position: relative;
+    left: 12px;
+}
 }
 #related-bottom:hover{
     cursor: pointer;
@@ -755,15 +770,15 @@ p{
 #suggest-column2{
     position: relative;
     height: 200px;
-    margin-left: 20px;
+    margin-left: 25px;
 }
 .suggest-shape{
     height: 50px;
     width: 320px;
     background-color: #f1f3f4;
     border-radius: 50px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 .suggest-shape:hover{
     cursor: pointer;
@@ -802,7 +817,14 @@ p{
 /* BOTTOM BAR */
 
 #bottom-bar-container{
-    height: 120px;
+    display: block;
+    position: relative;
+    width: 1271px;
+    margin-top: 80px;
+    margin-left: -7px;
+    height: 80px;
+    background-color: #f1f3f4;
+    border-top: 1px solid rgb(220 220 220);
 }
 #bottom-bar1{}
 #bottom-bar2{}
